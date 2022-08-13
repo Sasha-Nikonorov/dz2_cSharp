@@ -1,11 +1,10 @@
 ﻿Console.WriteLine("Пожалуйста, введите целое число");
-string? numberAString = Console.ReadLine();
-int numberA = int.Parse(numberAString!);
+int numberA = int.Parse(Console.ReadLine());
 
 while (numberA > 1000)
-   {
-    numberA = numberA / 10;
-   }
+{
+   numberA = numberA / 10;
+}
    
 
 int numberB = numberA/100;
