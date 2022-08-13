@@ -1,6 +1,5 @@
 ﻿Console.WriteLine("Пожалуйста, введите целое число");
-string? numberWString = Console.ReadLine();
-int numberA = int.Parse(numberWString!);
+int numberA = int.Parse(Console.ReadLine());
 
 if(numberA<=5)
 {
