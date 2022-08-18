@@ -1,5 +1,5 @@
-﻿Console.WriteLine("Пожалуйста, введите целое число");
-int numberA = int.Parse(Console.ReadLine());
+Console.WriteLine("Пожалуйста, введите целое число");
+int numberA = int.Parse(Console.ReadLine()!);
 
 if (numberA > 1000)
 {
