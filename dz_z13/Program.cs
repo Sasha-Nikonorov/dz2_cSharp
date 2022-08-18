@@ -1,13 +1,14 @@
-﻿Console.WriteLine("Пожалуйста, введите целое число");
-int numberA = int.Parse(Console.ReadLine());
+Console.WriteLine("Пожалуйста, введите целое число");
+string? numberAString = Console.ReadLine();
+int numberA = int.Parse(numberAString!);
 
 while (numberA > 1000)
 {
-   numberA = numberA / 10;
+    numberA = numberA / 10;
 }
-   
 
-int numberB = numberA/100;
+
+int numberB = numberA / 100;
 
 if (numberB == 0)
 {
@@ -15,6 +16,6 @@ if (numberB == 0)
 }
 else
 {
-    int numberC = numberA - ((numberA/10)*10);
+    int numberC = numberA - ((numberA / 10) * 10);
     Console.WriteLine("Третья цифра введенного числа " + numberC);
 }
